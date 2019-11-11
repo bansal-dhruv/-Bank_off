@@ -4,6 +4,8 @@ This is a basic proposal or model ,eliminating bank inbetween borrower and
 lender to provide equal RI to both the parties.
 ```
 # Developers
+```bash
 Dhruv Bansal
 Manish Rawat
 Ayush Bansal
+```
