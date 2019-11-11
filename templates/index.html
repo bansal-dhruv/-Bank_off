@@ -1,0 +1,251 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>BankOff</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/lightbox/simpleLightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/swiper/css/swiper.min.css' %}">
+    <!-- main css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+
+    <!--================Header Menu Area =================-->
+    <!-- include /navbar.html -->
+    {% include "includes/navbar.html" %}
+    <!--================Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="home_banner_area">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <img src="{% static 'img/slider/slider-1.jpg' %}" alt="">
+                  <div class="slider_text_inner">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-lg-7">
+                              <div class="slider_text">
+                                 <h2>We Combine <br />Business with Finance</h2>
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 <a class="banner_btn" href="/login">Login</a>
+                                 <a class="banner_btn" href="/signup">Register</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </section>
+<!--================End Home Banner Area =================-->
+
+<section class="project_area">
+ <div class="row m0">
+    <div class="col-lg-6 col-md-6 p0">
+       <div class="project_item">
+          <img src="{% static 'img/lead.jpg' %}" alt="" height=350>
+          <div class="hover_text">
+             <h4 style="color:rgb(62, 171, 239)">Lend <br />Money</h4>
+             <a class="main_btn" href="#">View More</a>
+         </div>
+     </div>
+ </div>
+
+ <div class="col-lg-6 col-md-6 p0">
+   <div class="project_item">
+      <img src="{% static 'img/borrow.jpg' %}" alt="" height=350>
+      <div class="hover_text">
+         <h4 style="color:rgb(62, 171, 239)">Borrow <br />Money</h4>
+         <a class="main_btn" href="#">View More</a>
+     </div>
+ </div>
+</div>
+</div>
+<br>
+<div class="row m0">
+ <div class="col-lg-4 col-md-6 p0">
+     <div class="project_item">
+         <img src="{% static 'img/startup.jpg' %}" alt="" height=250>
+         <div class="hover_text">
+             <h4 style="color:rgb(62, 171, 239)">Invest in <br />Startups</h4>
+             <a class="main_btn" href="#">View More</a>
+         </div>
+     </div>
+ </div>
+ <div class="col-lg-4 col-md-6 p0">
+     <div class="project_item">
+         <img src="{% static 'img/join.jpg' %}" alt="" height=250>
+         <div class="hover_text">
+             <h4 style="color:rgb(62, 171, 239)">Join <br />Community</h4>
+             <a class="main_btn" href="#">View More</a>
+         </div>
+     </div>
+ </div>
+ <div class="col-lg-4 col-md-6 p0">
+     <div class="project_item">
+         <img src="{% static 'img/investor.jpeg' %}" alt="" height=250>
+         <div class="hover_text">
+             <h4 style="color:rgb(62, 171, 239)">Find <br />Investor</h4>
+             <a class="main_btn" href="/registerstartup/">View More</a>
+         </div>
+     </div>
+ </div>
+</div>
+</section>
+
+<!--================End Project Area =================-->
+
+<!--================Home Blog Area =================-->
+<section class="home_blog_area">
+   <div class="row m0">
+      <div class="col-lg-3 p0">
+         <div class="h_blog_img">
+            <img src="{% static 'img/home-blog/h-blog-1.jpg' %}" alt="">
+        </div>
+    </div>
+    <div class="col-lg-3 p0">
+     <div class="h_blog_text">
+        <a class="cat" href="#">25 june, 2018  |  By Mark Wiens</a>
+        <a href="#"><h4>Addiction When Gambling Becomes A Problem</h4></a>
+        <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops.</p>
+    </div>
+</div>
+<div class="col-lg-3 p0">
+ <div class="h_blog_img">
+    <img src="{% static 'img/home-blog/h-blog-2.jpg' %}" alt="">
+</div>
+</div>
+<div class="col-lg-3 p0">
+ <div class="h_blog_text">
+    <a class="cat" href="#">25 june, 2018  |  By Mark Wiens</a>
+    <a href="#"><h4>Addiction When Gambling Becomes A Problem</h4></a>
+    <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops.</p>
+</div>
+</div>
+<div class="col-lg-3 p0">
+ <div class="h_blog_text">
+    <a class="cat" href="#">25 june, 2018  |  By Mark Wiens</a>
+    <a href="#"><h4>Addiction When Gambling Becomes A Problem</h4></a>
+    <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops.</p>
+</div>
+</div>
+<div class="col-lg-3 p0">
+ <div class="h_blog_img">
+    <img src="{% static 'img/home-blog/h-blog-3.jpg' %}" alt="">
+</div>
+</div>
+<div class="col-lg-3 p0">
+ <div class="h_blog_text">
+    <a class="cat" href="#">25 june, 2018  |  By Mark Wiens</a>
+    <a href="#"><h4>Addiction When Gambling Becomes A Problem</h4></a>
+    <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops.</p>
+</div>
+</div>
+<div class="col-lg-3 p0">
+ <div class="h_blog_img">
+    <img src="{% static 'img/home-blog/h-blog-4.jpg' %}" alt="">
+</div>
+</div>
+</div>
+</section>
+<!--================End Home Blog Area =================-->
+
+<!--================ start footer Area  =================-->	
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">About Biznance</h6>
+                    <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point where images and videos are</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">Navigation Links</h6>
+                    <div class="row">
+                        <div class="col-4">
+                            <ul class="list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Feature</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="list">
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">Newsletter</h6>
+                    <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
+                    <div id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                            <div class="input-group d-flex flex-row">
+                                <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>
+                            </div>
+                            <div class="mt-10 info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border_line"></div>
+    <div class="container">
+        <div class="row footer-bottom d-flex justify-content-between align-items-center">
+            <p class="col-lg-8 col-md-8 footer-text m-0">
+            Copyright &copy; All rights reserved.</a>
+        </p>
+        <div class="col-lg-4 col-md-4 footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+</footer>
+<!--================ End footer Area  =================-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="js/stellar.js' %}"></script>
+<script src="{% static 'vendors/lightbox/simpleLightbox.min.js' %}"></script>
+<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+<script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'vendors/swiper/js/swiper.min.js' %}"></script>
+<script src="{% static 'js/theme.js' %}"></script>
+</body>
+</html>

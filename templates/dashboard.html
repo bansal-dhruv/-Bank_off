@@ -1,0 +1,162 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>BankOff</title>
+    <style>
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 40%;
+        }
+
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+          padding: 2px 16px;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+
+    <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/lightbox/simpleLightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/swiper/css/swiper.min.css' %}">
+    <!-- main css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+
+    <!--================Header Menu Area =================-->
+
+
+  <h1>Dashboard<br><small>Welcome {{username}}</small></h1>
+
+    <hr>
+    <table class="table table-striped">
+	<tr>
+		<th style="text-align:center;">Startups</th>
+		<th>Money Lended</th>
+	</tr>
+
+	{% for i in investment %}
+	<tr>
+		<td>{{i.A}}</td>
+		<td>{{i.B}}</td>
+	</tr>
+	{% endfor %}
+
+</table>
+<hr>
+
+<h2>Available Start-ups</h2>
+<hr>
+
+
+{% for i in allStartup %}
+  <div class="card">
+    <div class="container">
+      <h4><b>{{ i.startup }}</b></h4>
+      <small>{{ i.description }}</small>
+      <small>{{ i.Investors }}</small>
+      <a href="/lend/{{i.startup}}/" class="btn btn-default btn-primary pull-right">Invest</a>
+    </div>
+  </div>
+  <br>
+{% endfor %}
+  <hr>
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">About Biznance</h6>
+                    <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point where images and videos are</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">Navigation Links</h6>
+                    <div class="row">
+                        <div class="col-4">
+                            <ul class="list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Feature</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="list">
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">Newsletter</h6>
+                    <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
+                    <div id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                            <div class="input-group d-flex flex-row">
+                                <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>
+                            </div>
+                            <div class="mt-10 info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border_line"></div>
+    <div class="container">
+        <div class="row footer-bottom d-flex justify-content-between align-items-center">
+            <p class="col-lg-8 col-md-8 footer-text m-0">
+            Copyright &copy; All rights reserved.</a>
+        </p>
+        <div class="col-lg-4 col-md-4 footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+</footer>
+<!--================ End footer Area  =================-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="js/stellar.js' %}"></script>
+<script src="{% static 'vendors/lightbox/simpleLightbox.min.js' %}"></script>
+<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+<script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'vendors/swiper/js/swiper.min.js' %}"></script>
+<script src="{% static 'js/theme.js' %}"></script>
+</body>
+</html>
