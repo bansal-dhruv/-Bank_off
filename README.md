@@ -6,5 +6,6 @@ lender to provide equal RI to both the parties.
 # Other Developers
 ```bash
 Manish Rawat
-Ayush Bansal
+Ayush Bansal 
 ```
+ 
