@@ -7,7 +7,7 @@ class LendBorrow(models.Model):
     transaction = models.IntegerField(default=0) 
     duedate = models.DateTimeField(auto_now_add=True)
 
-
+ 
 class committee(models.Model):
     committeeName = models.CharField(primary_key=True, max_length=20)
     memberCount = models.IntegerField(default=0)
