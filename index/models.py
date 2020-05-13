@@ -4,7 +4,7 @@ from django.db import models
 class LendBorrow(models.Model):
     lenderusername = models.CharField(default="NONE",max_length=20)
     borrowerusername = models.CharField(default="NONE",max_length=20)
-    transaction = models.IntegerField(default=0)
+    transaction = models.IntegerField(default=0) 
     duedate = models.DateTimeField(auto_now_add=True)
 
 
